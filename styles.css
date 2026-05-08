@@ -1782,53 +1782,87 @@ body {
 }
 
 @media (max-width: 600px) {
+    .hero {
+        padding: 100px 20px 60px;
+        min-height: auto;
+    }
+
     .hero-headline {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        line-height: 1.1;
+    }
+
+    .hero-subhead {
+        font-size: 1rem;
+        margin-bottom: 24px;
     }
 
     .hero-actions {
         flex-direction: column;
         align-items: stretch;
+        gap: 12px;
     }
 
-    .btn {
-        justify-content: center;
-        text-align: center;
+    .hero-image-card {
+        width: 180px;
+        height: 260px;
+        margin-top: 40px;
     }
 
-    .services-grid {
+    .section {
+        padding: 60px 20px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .services-grid, 
+    .process-steps, 
+    .blog-grid, 
+    .testimonials-grid {
         grid-template-columns: 1fr;
-    }
-
-    .process-steps {
-        grid-template-columns: 1fr;
-    }
-
-    .blog-grid {
-        grid-template-columns: 1fr;
+        gap: 16px;
     }
 
     .stats-row {
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        gap: 12px;
+    }
+
+    .project-card.featured .project-info {
+        padding: 24px 20px;
+    }
+
+    .project-title {
+        font-size: 1.2rem;
     }
 
     .footer-inner {
         grid-template-columns: 1fr;
-        gap: 24px;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
+        gap: 32px;
         text-align: center;
     }
 
-    .tech-grid {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        gap: 10px;
+    .footer-socials {
+        justify-content: center;
     }
 
     .about-meta-row {
-        gap: 20px;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .trust-markers {
+        gap: 10px;
+    }
+
+    .marker {
+        font-size: 0.65rem;
+        padding: 4px 10px;
+    }
+
+    .contact-cta-card {
+        padding: 40px 20px;
     }
 }
